@@ -193,3 +193,11 @@ details.all-material-section>summary:focus-visible{outline:2px solid var(--ink);
   }
 }
 .language-switch{display:flex;align-items:center;margin-left:auto;border:1px solid var(--line);font:10px var(--sans);letter-spacing:.08em}.language-switch a{padding:4px 7px;color:var(--ink);text-decoration:none}.language-switch a[aria-current="page"]{background:var(--mint)}
+
+/* A compact advertisement footer below the full-width ledger. */
+.has-ad-footer .facilities-ledger{height:calc(100vh - 154px);height:calc(100dvh - 154px)}
+.site-ad-footer{box-sizing:border-box;min-height:110px;padding:12px;border-top:1px solid var(--line);text-align:center;background:var(--paper)}
+.site-ad-footer p{margin:0 0 6px;color:var(--muted);font:10px/14px var(--sans)}
+.site-ad-footer a{display:block;width:468px;max-width:100%;margin:0 auto}
+.site-ad-footer a img{display:block;width:100%;height:auto;aspect-ratio:468/60}
+@media(max-width:699px){.has-ad-footer .facilities-ledger{height:calc(100vh - 152px);height:calc(100dvh - 152px)}}
