@@ -29,18 +29,19 @@ window.ARCHIVE_DATA.forEach((item,index,all)=>{
       number:materialDisplayNumbers.get(material.id),
       title:material.name,
       // Do not add type, notes, material names, URLs, or any CSV extras here.
-      text:normalizeSearch([item.prefecture,item.city,item.name,item.name_en,item.type,item.type_en,window.EN_TRANSLATIONS?.facilities?.[item.name],window.EN_TRANSLATIONS?.types?.[item.type]].filter(Boolean).join(' '))
+      text:normalizeSearch([item.prefecture,item.city,item.name,item.name_en,window.EN_TRANSLATIONS?.facilities?.[item.name]].filter(Boolean).join(' '))
     })));
     return {entries};
   }
 
   function parseQuery(query){
-    const tokens=normalizeSearch(query).split(/\s+/).filter(Boolean);
-    return {text:tokens,tokens};
+    const normalized=normalizeSearch(query).replace(/artificial islands/g,'人工島');
+    const tokens=normalized.split(/\s+/).filter(Boolean);
+    return {text:tokens.filter(token=>token!=='人工島'),tokens,islandOnly:tokens.includes('人工島')};
   }
 
   function matches(entry,parsed){
-    return parsed.text.every(token=>entry.text.includes(token));
+    return (!parsed.islandOnly||!!entry.item.artificialIsland)&&parsed.text.every(token=>entry.text.includes(token));
   }
 
   root.FACILITY_SEARCH={normalizeSearch,buildIndex,parseQuery,matches};

@@ -1,0 +1,168 @@
+[
+  {
+    "materialId": "botanical",
+    "name": "夢の島熱帯植物館",
+    "island": "夢の島",
+    "name_en": "Yumenoshima Tropical Greenhouse",
+    "source": "https://www.yumenoshima.jp/botanicalhall",
+    "note_en": "Opened in 1988 on Yumenoshima. Its domed greenhouses use heat from a nearby waste incineration plant and display tropical plants.",
+    "type_en": "Botanical greenhouse"
+  },
+  {
+    "materialId": "social-study",
+    "name": "東京都虹の下水道館",
+    "island": "有明",
+    "name_en": "Tokyo Rainbow Sewerage Museum",
+    "source": "https://www.nijinogesuidoukan.jp/",
+    "note_en": "A public education center on the fifth floor of the Ariake Water Reclamation Center, with hands-on exhibits about sewerage work.",
+    "type_en": "Water and sewerage museum"
+  },
+  {
+    "materialId": "social-study",
+    "name": "有明水再生センター",
+    "island": "有明",
+    "name_en": "Ariake Water Reclamation Center",
+    "source": "https://www.gesui.metro.tokyo.lg.jp/business/b4/guide/sise-list/03-12/",
+    "note_en": "A large wastewater treatment facility in Ariake; tours require advance booking.",
+    "type_en": "Wastewater treatment plant"
+  },
+  {
+    "materialId": "rooftops",
+    "name": "アクアシティお台場「屋上・上層テラス」",
+    "island": "台場",
+    "name_en": "Aqua City Odaiba Rooftop Terraces",
+    "source": "https://www.aquacity.jp/",
+    "note_en": "Free upper-level terraces at Aqua City Odaiba with views across Tokyo Bay.",
+    "type_en": "Rooftop terrace"
+  },
+  {
+    "materialId": "rooftops",
+    "name": "有明ガーデン「屋上・ガーデンテラス」",
+    "island": "有明",
+    "name_en": "Ariake Garden Rooftop Terrace",
+    "source": "https://www.shopping-sumitomo-rd.com/ariake/shopping",
+    "note_en": "A free outdoor garden terrace on a large mixed-use complex in Ariake.",
+    "type_en": "Rooftop garden terrace"
+  },
+  {
+    "materialId": "rooftops",
+    "name": "東京ビッグサイト「屋外デッキ・上層テラス」",
+    "island": "有明",
+    "name_en": "Tokyo Big Sight Outdoor Deck",
+    "source": "https://www.bigsight.jp/visitor/access/",
+    "note_en": "Outdoor decks and upper terraces of the large exhibition complex; public access varies by event.",
+    "type_en": "Outdoor deck"
+  },
+  {
+    "materialId": "ferry-terminals",
+    "name": "有明客船ターミナル",
+    "island": "有明",
+    "name_en": "Ariake Passenger Ship Terminal",
+    "source": "https://www.tptc.co.jp/terminal/guide/ariake",
+    "note_en": "A public passenger terminal and waiting space on the Ariake waterfront.",
+    "type_en": "Passenger terminal"
+  },
+  {
+    "materialId": "ferry-terminals",
+    "name": "大阪南港フェリーターミナル",
+    "island": "咲洲",
+    "name_en": "Osaka Nanko Ferry Terminal",
+    "source": "https://www.city.osaka.lg.jp/port/page/0000002661.html",
+    "note_en": "A ferry terminal on Sakishima with large harbor structures and connecting passages.",
+    "type_en": "Ferry terminal"
+  },
+  {
+    "materialId": "ferry-terminals",
+    "name": "神戸六甲アイランドフェリーターミナル",
+    "island": "六甲アイランド",
+    "name_en": "Kobe Rokko Island Ferry Terminal",
+    "source": "https://www.city.kobe.lg.jp/a14075/kanko/leisure/harbor/passenger/terminal/index.html",
+    "note_en": "A long-distance ferry terminal on the planned island of Rokko Island.",
+    "type_en": "Ferry terminal"
+  },
+  {
+    "materialId": "airport-terminals",
+    "name": "北九州空港",
+    "island": "北九州空港島",
+    "name_en": "Kitakyushu Airport",
+    "source": "https://www.pref.fukuoka.lg.jp/contents/sinnkitakyuusyuukuukou.html",
+    "note_en": "An airport terminal on a man-made island off Kitakyushu.",
+    "type_en": "Airport terminal"
+  },
+  {
+    "materialId": "science",
+    "name": "日本科学未来館",
+    "island": "青海",
+    "name_en": "Miraikan — The National Museum of Emerging Science and Innovation",
+    "source": "https://www.miraikan.jst.go.jp/aboutus/",
+    "note_en": "Opened in 2001 as a science communication center. Miraikan is fully closed for renovation from October 1, 2026, with reopening planned for April 23, 2027.",
+    "status": "2026年10月〜2027年4月 全館休館予定",
+    "type_en": "Science museum"
+  },
+  {
+    "materialId": "atrium-public-space",
+    "name": "青海フロンティアビル",
+    "island": "青海",
+    "name_en": "Aomi Frontier Building",
+    "source": "https://www.tokyo-teleport.co.jp/b/aomi/",
+    "note_en": "A 1996 waterfront office building with a public entrance and atrium connecting surrounding routes.",
+    "type_en": "Office atrium"
+  },
+  {
+    "materialId": "atrium-public-space",
+    "name": "有明フロンティアビル",
+    "island": "有明",
+    "name_en": "Ariake Frontier Building",
+    "source": "https://www.tokyo-teleport.co.jp/b/ariake/",
+    "note_en": "A 1996 office complex with a station-linked deck and public atrium.",
+    "type_en": "Office atrium and deck"
+  },
+  {
+    "materialId": "atrium-public-space",
+    "name": "台場フロンティアビル",
+    "island": "台場",
+    "name_en": "Daiba Frontier Building",
+    "source": "https://www.tokyo-teleport.co.jp/b/daiba/",
+    "note_en": "Opened in 1995; its shared ground floors and atrium form an indoor route through the waterfront business district.",
+    "type_en": "Office atrium"
+  },
+  {
+    "materialId": "regional-botanical",
+    "name": "神戸どうぶつ王国",
+    "island": "ポートアイランド",
+    "name_en": "Kobe Animal Kingdom",
+    "source": "https://www.kobe-oukoku.com/",
+    "note_en": "An indoor and outdoor animal and plant facility on Port Island, including tropical greenhouse spaces.",
+    "type_en": "Animal and botanical exhibits"
+  },
+  {
+    "materialId": "csv-16d6ffe93a3cf21e777b",
+    "name": "Zepp Tokyo",
+    "island": "青海",
+    "name_en": "Zepp Tokyo",
+    "source": "https://www.zepp.co.jp/news/4586/",
+    "note_en": "A large live music venue in Aomi that closed on January 1, 2022.",
+    "status": "2022年閉館",
+    "type_en": "Live music venue"
+  },
+  {
+    "materialId": "csv-16d6ffe93a3cf21e777b",
+    "name": "ヴィーナスフォート",
+    "island": "青海",
+    "name_en": "VenusFort",
+    "source": "https://www.mori.co.jp/press/release/22venusfort_thankful_carnival/",
+    "note_en": "A shopping complex with indoor streets styled after a European town. It closed on March 27, 2022.",
+    "status": "2022年閉館",
+    "type_en": "Shopping complex"
+  },
+  {
+    "materialId": "csv-16d6ffe93a3cf21e777b",
+    "name": "MEGA WEB",
+    "island": "青海",
+    "name_en": "MEGA WEB",
+    "source": "https://global.toyota/en/company/profile/museums/megaweb.html",
+    "note_en": "Toyota’s former exhibition and test-drive facility in Aomi. It closed on December 31, 2021.",
+    "status": "2021年閉館",
+    "type_en": "Corporate exhibition venue"
+  }
+]

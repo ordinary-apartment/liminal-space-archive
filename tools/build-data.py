@@ -16,6 +16,18 @@ FIELDS = {
     'city': ['市区町村', 'city'],
     'name': ['店舗名・施設名', '施設名', '店舗名', 'name'],
     'type': ['分類', 'type'],
+    'artificialIsland': ['人工島', 'artificialIsland'],
+    'name_en': ['英語名', 'name_en'],
+    'type_en': ['英語分類', 'type_en'],
+    'note_en': ['英語説明', 'note_en'],
+    'address': ['所在地', 'address'],
+    'latitude': ['緯度', 'latitude'],
+    'longitude': ['経度', 'longitude'],
+    'coordinateSource': ['座標出典', 'coordinateSource'],
+    'completionYear': ['竣工年', 'completionYear'],
+    'use': ['用途', 'use'],
+    'status': ['現存状況', 'status'],
+    'source': ['出典', 'source'],
     'note': ['説明・狙い目', '説明', '備考', 'note'],
     'official': ['公式サイト', '公式サイトURL', 'official'],
     'maps': ['Googleマップ', 'GoogleマップURL', 'maps'],
@@ -36,20 +48,20 @@ FIELDS = {
 ASSET_REFERENCE = re.compile(r'((?:src|href)="|\')(?!https?:|//)([^"\'?#]+\.(?:js|css))(?:\?[^"\']*)?(["\'])')
 
 def update_asset_versions(root):
-    index = root / 'index.html'
-    if not index.exists():
-        return
-    html = index.read_text(encoding='utf-8')
+    for index in (root / 'index.html', root / 'en' / 'index.html'):
+        if not index.exists():
+            continue
+        html = index.read_text(encoding='utf-8')
 
-    def replace(match):
-        prefix, name, suffix = match.groups()
-        asset = root / name
-        digest = hashlib.sha256(asset.read_bytes()).hexdigest()[:16]
-        return f'{prefix}{name}?v={digest}{suffix}'
+        def replace(match):
+            prefix, name, suffix = match.groups()
+            asset = index.parent / name
+            digest = hashlib.sha256(asset.read_bytes()).hexdigest()[:16]
+            return f'{prefix}{name}?v={digest}{suffix}'
 
-    updated = ASSET_REFERENCE.sub(replace, html)
-    if updated != html:
-        index.write_text(updated, encoding='utf-8')
+        updated = ASSET_REFERENCE.sub(replace, html)
+        if updated != html:
+            index.write_text(updated, encoding='utf-8')
 
 def normalized_filename(value):
     """Use one filename identity on filesystems with different Unicode forms."""
@@ -122,6 +134,9 @@ def read_csv(path):
         item['relatedLinks']=related_links
         for key in ['related1Title','related1URL','related2Title','related2URL','related3Title','related3URL']:
             item.pop(key, None)
+        for key in ('artificialIsland','name_en','type_en','note_en','address','latitude','longitude','coordinateSource','completionYear','use','status','source'):
+            if not item[key].strip():
+                item.pop(key)
         extra = {k:v for k,v in row.items() if k not in known}
         if extra:
             item['extra'] = extra
@@ -180,6 +195,23 @@ def build(root=ROOT):
         items = read_csv(path)
         material_name = normalized_filename(path.stem)
         materials.append({'id':entry['id'], 'number':entry['number'], 'name':material_name, 'shortName':entry.get('short',material_name), 'file':path.name, 'count':len(items), 'items':items})
+    memberships_path = data / 'artificial-island-memberships.json'
+    if memberships_path.exists():
+        memberships = json.loads(memberships_path.read_text(encoding='utf-8'))
+        by_id = {material['id']: material for material in materials}
+        for membership in memberships:
+            material = by_id.get(membership['materialId'])
+            if material is None:
+                raise ValueError(f"人工島分類: 不明な資料ID {membership['materialId']}")
+            matches = [item for item in material['items'] if item['name'] == membership['name']]
+            if len(matches) != 1 or matches[0].get('artificialIsland'):
+                raise ValueError(f"人工島分類: 施設を一意に特定できません: {membership['name']}")
+            matches[0]['artificialIsland'] = membership['island']
+            for field in ('name_en', 'type_en', 'note_en', 'status'):
+                if membership.get(field):
+                    matches[0][field] = membership[field]
+            if membership.get('source') and not matches[0].get('source'):
+                matches[0]['source'] = membership['source']
     materials.sort(key=lambda m:m['number'])
     dataset = {'schemaVersion':2, 'materialCount':len(materials), 'total':sum(m['count'] for m in materials), 'materials':materials}
     # Write only after ALL inputs pass validation, so a bad CSV cannot replace a valid build.

@@ -1,7 +1,7 @@
 {
   "schemaVersion": 2,
-  "materialCount": 52,
-  "total": 1765,
+  "materialCount": 53,
+  "total": 1782,
   "materials": [
     {
       "id": "botanical",
@@ -34,7 +34,12 @@
           ],
           "extra": {
             "参照": "公式サイト：https://www.yumenoshima.jp/botanicalhallWikipedia：https://ja.wikipedia.org/wiki/%E5%A4%A2%E3%81%AE%E5%B3%B6%E7%86%B1%E5%B8%AF%E6%A4%8D%E7%89%A9%E9%A4%A8"
-          }
+          },
+          "artificialIsland": "夢の島",
+          "name_en": "Yumenoshima Tropical Greenhouse",
+          "type_en": "Botanical greenhouse",
+          "note_en": "Opened in 1988 on Yumenoshima. Its domed greenhouses use heat from a nearby waste incineration plant and display tropical plants.",
+          "source": "https://www.yumenoshima.jp/botanicalhall"
         },
         {
           "prefecture": "東京都",
@@ -394,7 +399,13 @@
           ],
           "extra": {
             "参照": ""
-          }
+          },
+          "artificialIsland": "青海",
+          "name_en": "Miraikan — The National Museum of Emerging Science and Innovation",
+          "type_en": "Science museum",
+          "note_en": "Opened in 2001 as a science communication center. Miraikan is fully closed for renovation from October 1, 2026, with reopening planned for April 23, 2027.",
+          "status": "2026年10月〜2027年4月 全館休館予定",
+          "source": "https://www.miraikan.jst.go.jp/aboutus/"
         },
         {
           "prefecture": "東京都",
@@ -688,7 +699,12 @@
           ],
           "extra": {
             "参照": "公式サイト：https://www.nijinogesuidoukan.jp/\nWikipedia:https://ja.wikipedia.org/wiki/%E6%9D%B1%E4%BA%AC%E9%83%BD%E8%99%B9%E3%81%AE%E4%B8%8B%E6%B0%B4%E9%81%93%E9%A4%A8"
-          }
+          },
+          "artificialIsland": "有明",
+          "name_en": "Tokyo Rainbow Sewerage Museum",
+          "type_en": "Water and sewerage museum",
+          "note_en": "A public education center on the fifth floor of the Ariake Water Reclamation Center, with hands-on exhibits about sewerage work.",
+          "source": "https://www.nijinogesuidoukan.jp/"
         },
         {
           "prefecture": "東京都",
@@ -1297,7 +1313,12 @@
           "relatedLinks": [],
           "extra": {
             "参照": "公式サイト：https://www.gesui.metro.tokyo.lg.jp/business/b4/guide/sise-list/03-12/\nWikipedia:https://ja.wikipedia.org/wiki/%E6%9C%89%E6%98%8E%E6%B0%B4%E5%86%8D%E7%94%9F%E3%82%BB%E3%83%B3%E3%82%BF%E3%83%BC"
-          }
+          },
+          "artificialIsland": "有明",
+          "name_en": "Ariake Water Reclamation Center",
+          "type_en": "Wastewater treatment plant",
+          "note_en": "A large wastewater treatment facility in Ariake; tours require advance booking.",
+          "source": "https://www.gesui.metro.tokyo.lg.jp/business/b4/guide/sise-list/03-12/"
         },
         {
           "prefecture": "東京都",
@@ -4440,7 +4461,12 @@
           "relatedLinks": [],
           "extra": {
             "参照": "公式サイト：https://www.aquacity.jp/"
-          }
+          },
+          "artificialIsland": "台場",
+          "name_en": "Aqua City Odaiba Rooftop Terraces",
+          "type_en": "Rooftop terrace",
+          "note_en": "Free upper-level terraces at Aqua City Odaiba with views across Tokyo Bay.",
+          "source": "https://www.aquacity.jp/"
         },
         {
           "prefecture": "東京都",
@@ -4456,7 +4482,12 @@
           "relatedLinks": [],
           "extra": {
             "参照": "公式サイト：https://www.shopping-sumitomo-rd.com/ariake/shopping"
-          }
+          },
+          "artificialIsland": "有明",
+          "name_en": "Ariake Garden Rooftop Terrace",
+          "type_en": "Rooftop garden terrace",
+          "note_en": "A free outdoor garden terrace on a large mixed-use complex in Ariake.",
+          "source": "https://www.shopping-sumitomo-rd.com/ariake/shopping"
         },
         {
           "prefecture": "東京都",
@@ -5272,7 +5303,12 @@
           "relatedLinks": [],
           "extra": {
             "参照": "公式サイト：http://www.bigsight.jp/"
-          }
+          },
+          "artificialIsland": "有明",
+          "name_en": "Tokyo Big Sight Outdoor Deck",
+          "type_en": "Outdoor deck",
+          "note_en": "Outdoor decks and upper terraces of the large exhibition complex; public access varies by event.",
+          "source": "https://www.bigsight.jp/visitor/access/"
         },
         {
           "prefecture": "東京都",
@@ -5457,7 +5493,12 @@
           "relatedLinks": [],
           "extra": {
             "参照": "公式サイト：https://www.tptc.co.jp/terminal/guide/ariake"
-          }
+          },
+          "artificialIsland": "有明",
+          "name_en": "Ariake Passenger Ship Terminal",
+          "type_en": "Passenger terminal",
+          "note_en": "A public passenger terminal and waiting space on the Ariake waterfront.",
+          "source": "https://www.tptc.co.jp/terminal/guide/ariake"
         },
         {
           "prefecture": "神奈川県",
@@ -5553,7 +5594,12 @@
           "relatedLinks": [],
           "extra": {
             "参照": "公式サイト：http://www.orange-ferry.co.jp/"
-          }
+          },
+          "artificialIsland": "咲洲",
+          "name_en": "Osaka Nanko Ferry Terminal",
+          "type_en": "Ferry terminal",
+          "note_en": "A ferry terminal on Sakishima with large harbor structures and connecting passages.",
+          "source": "https://www.city.osaka.lg.jp/port/page/0000002661.html"
         },
         {
           "prefecture": "兵庫県",
@@ -5585,7 +5631,12 @@
           "relatedLinks": [],
           "extra": {
             "参照": "公式サイト：http://www.ferry-sunflower.co.jp/"
-          }
+          },
+          "artificialIsland": "六甲アイランド",
+          "name_en": "Kobe Rokko Island Ferry Terminal",
+          "type_en": "Ferry terminal",
+          "note_en": "A long-distance ferry terminal on the planned island of Rokko Island.",
+          "source": "https://www.city.kobe.lg.jp/a14075/kanko/leisure/harbor/passenger/terminal/index.html"
         },
         {
           "prefecture": "兵庫県",
@@ -6293,7 +6344,12 @@
           "relatedLinks": [],
           "extra": {
             "参照": "公式サイト：http://www.kitakyu-air.jp/"
-          }
+          },
+          "artificialIsland": "北九州空港島",
+          "name_en": "Kitakyushu Airport",
+          "type_en": "Airport terminal",
+          "note_en": "An airport terminal on a man-made island off Kitakyushu.",
+          "source": "https://www.pref.fukuoka.lg.jp/contents/sinnkitakyuusyuukuukou.html"
         },
         {
           "prefecture": "佐賀県",
@@ -10896,7 +10952,13 @@
           "kind": "",
           "officialSearch": "",
           "mapQueryName": "",
-          "relatedLinks": []
+          "relatedLinks": [],
+          "artificialIsland": "青海",
+          "name_en": "Zepp Tokyo",
+          "type_en": "Live music venue",
+          "note_en": "A large live music venue in Aomi that closed on January 1, 2022.",
+          "status": "2022年閉館",
+          "source": "https://www.zepp.co.jp/news/4586/"
         },
         {
           "prefecture": "東京都",
@@ -10948,7 +11010,13 @@
           "kind": "",
           "officialSearch": "",
           "mapQueryName": "",
-          "relatedLinks": []
+          "relatedLinks": [],
+          "artificialIsland": "青海",
+          "name_en": "MEGA WEB",
+          "type_en": "Corporate exhibition venue",
+          "note_en": "Toyota’s former exhibition and test-drive facility in Aomi. It closed on December 31, 2021.",
+          "status": "2021年閉館",
+          "source": "https://global.toyota/en/company/profile/museums/megaweb.html"
         },
         {
           "prefecture": "東京都",
@@ -10961,7 +11029,13 @@
           "kind": "",
           "officialSearch": "",
           "mapQueryName": "",
-          "relatedLinks": []
+          "relatedLinks": [],
+          "artificialIsland": "青海",
+          "name_en": "VenusFort",
+          "type_en": "Shopping complex",
+          "note_en": "A shopping complex with indoor streets styled after a European town. It closed on March 27, 2022.",
+          "status": "2022年閉館",
+          "source": "https://www.mori.co.jp/press/release/22venusfort_thankful_carnival/"
         },
         {
           "prefecture": "東京都",
@@ -25686,7 +25760,12 @@
           ],
           "extra": {
             "参照": "公式サイト：https://www.kobe-oukoku.com/\nWikipedia：https://ja.wikipedia.org/wiki/%E7%A5%9E%E6%88%B8%E3%81%A9%E3%81%86%E3%81%B6%E3%81%A4%E7%8E%8B%E5%9B%BD"
-          }
+          },
+          "artificialIsland": "ポートアイランド",
+          "name_en": "Kobe Animal Kingdom",
+          "type_en": "Animal and botanical exhibits",
+          "note_en": "An indoor and outdoor animal and plant facility on Port Island, including tropical greenhouse spaces.",
+          "source": "https://www.kobe-oukoku.com/"
         },
         {
           "prefecture": "和歌山県",
@@ -26395,7 +26474,12 @@
           ],
           "extra": {
             "参照": ""
-          }
+          },
+          "artificialIsland": "青海",
+          "name_en": "Aomi Frontier Building",
+          "type_en": "Office atrium",
+          "note_en": "A 1996 waterfront office building with a public entrance and atrium connecting surrounding routes.",
+          "source": "https://www.tokyo-teleport.co.jp/b/aomi/"
         },
         {
           "prefecture": "東京都",
@@ -26420,7 +26504,12 @@
           ],
           "extra": {
             "参照": ""
-          }
+          },
+          "artificialIsland": "有明",
+          "name_en": "Ariake Frontier Building",
+          "type_en": "Office atrium and deck",
+          "note_en": "A 1996 office complex with a station-linked deck and public atrium.",
+          "source": "https://www.tokyo-teleport.co.jp/b/ariake/"
         },
         {
           "prefecture": "東京都",
@@ -26625,7 +26714,12 @@
           ],
           "extra": {
             "参照": ""
-          }
+          },
+          "artificialIsland": "台場",
+          "name_en": "Daiba Frontier Building",
+          "type_en": "Office atrium",
+          "note_en": "Opened in 1995; its shared ground floors and atrium form an indoor route through the waterfront business district.",
+          "source": "https://www.tokyo-teleport.co.jp/b/daiba/"
         },
         {
           "prefecture": "東京都",
@@ -31369,6 +31463,391 @@
           "extra": {
             "参照": ""
           }
+        }
+      ]
+    },
+    {
+      "id": "csv-c9d90e24fc8a58ecbd8b",
+      "number": 53,
+      "name": "人工島",
+      "shortName": "人工島",
+      "file": "人工島.csv",
+      "count": 17,
+      "items": [
+        {
+          "prefecture": "兵庫県",
+          "city": "神戸市中央区",
+          "name": "神戸国際展示場",
+          "type": "展示施設",
+          "artificialIsland": "ポートアイランド",
+          "name_en": "Kobe International Exhibition Hall",
+          "type_en": "Exhibition venue",
+          "note_en": "A large exhibition complex on Port Island, linked to the island transit network.",
+          "address": "神戸市中央区港島中町6-11-1",
+          "latitude": "34.6643524",
+          "longitude": "135.2117416",
+          "coordinateSource": "https://www.openstreetmap.org/way/336602636",
+          "use": "展示施設",
+          "status": "現存・運営中",
+          "source": "https://kobe-convention.jp/ja/planning/venues-and-accommodations/exhibition-hall/",
+          "note": "ポートアイランドの大規模展示施設。複数の展示館と駅前動線を持つ。",
+          "official": "https://kobe-convention.jp/ja/planning/venues-and-accommodations/exhibition-hall/",
+          "maps": "https://www.google.com/maps/search/?api=1&query=%E7%A5%9E%E6%88%B8%E5%9B%BD%E9%9A%9B%E5%B1%95%E7%A4%BA%E5%A0%B4%20%E5%85%B5%E5%BA%AB%E7%9C%8C%20%E7%A5%9E%E6%88%B8%E5%B8%82%E4%B8%AD%E5%A4%AE%E5%8C%BA",
+          "kind": "",
+          "officialSearch": "",
+          "mapQueryName": "",
+          "relatedLinks": []
+        },
+        {
+          "prefecture": "兵庫県",
+          "city": "神戸市中央区",
+          "name": "バンドー神戸青少年科学館",
+          "type": "科学館",
+          "artificialIsland": "ポートアイランド",
+          "name_en": "Bando Kobe Science Museum",
+          "type_en": "Science museum",
+          "note_en": "A Port Island science museum with a 1984 main building, a 1989 annex and a dome theater; exhibits are being renewed.",
+          "address": "神戸市中央区港島中町7-7-6",
+          "latitude": "34.6661166",
+          "longitude": "135.2185388",
+          "coordinateSource": "https://www.openstreetmap.org/relation/20187038",
+          "use": "科学館",
+          "status": "現存・運営中",
+          "source": "https://www.city.kobe.lg.jp/a36708/kosodate/lifelong/kagakukan.html",
+          "note": "1984年開館の本館と1989年開館の新館からなる科学館。展示室とドームシアターを備え、改修が進む。",
+          "official": "https://www.city.kobe.lg.jp/a36708/kosodate/lifelong/kagakukan.html",
+          "maps": "https://www.google.com/maps/search/?api=1&query=%E3%83%90%E3%83%B3%E3%83%89%E3%83%BC%E7%A5%9E%E6%88%B8%E9%9D%92%E5%B0%91%E5%B9%B4%E7%A7%91%E5%AD%A6%E9%A4%A8%20%E5%85%B5%E5%BA%AB%E7%9C%8C%20%E7%A5%9E%E6%88%B8%E5%B8%82%E4%B8%AD%E5%A4%AE%E5%8C%BA",
+          "kind": "",
+          "officialSearch": "",
+          "mapQueryName": "",
+          "relatedLinks": []
+        },
+        {
+          "prefecture": "兵庫県",
+          "city": "神戸市東灘区",
+          "name": "神戸ファッション美術館",
+          "type": "美術館",
+          "artificialIsland": "六甲アイランド",
+          "name_en": "Kobe Fashion Museum",
+          "type_en": "Art museum",
+          "note_en": "Opened in 1997 within Kobe Fashion Plaza, this museum forms part of Rokko Island’s cultural center.",
+          "address": "神戸市東灘区向洋町中2-9-1",
+          "latitude": "34.6878923",
+          "longitude": "135.2703325",
+          "coordinateSource": "https://www.openstreetmap.org/node/1423079203",
+          "use": "美術館",
+          "status": "現存・運営中",
+          "source": "https://www.city.kobe.lg.jp/a93457/kanko/fashion/fashioncity.html",
+          "note": "神戸ファッションプラザ内に1997年開館した美術館。人工島の文化拠点を構成する。",
+          "official": "https://www.city.kobe.lg.jp/a93457/kanko/fashion/fashioncity.html",
+          "maps": "https://www.google.com/maps/search/?api=1&query=%E7%A5%9E%E6%88%B8%E3%83%95%E3%82%A1%E3%83%83%E3%82%B7%E3%83%A7%E3%83%B3%E7%BE%8E%E8%A1%93%E9%A4%A8%20%E5%85%B5%E5%BA%AB%E7%9C%8C%20%E7%A5%9E%E6%88%B8%E5%B8%82%E6%9D%B1%E7%81%98%E5%8C%BA",
+          "kind": "",
+          "officialSearch": "",
+          "mapQueryName": "",
+          "relatedLinks": []
+        },
+        {
+          "prefecture": "兵庫県",
+          "city": "神戸市東灘区",
+          "name": "神戸市立小磯記念美術館",
+          "type": "美術館",
+          "artificialIsland": "六甲アイランド",
+          "name_en": "Kobe City Koiso Memorial Museum of Art",
+          "type_en": "Art museum",
+          "note_en": "Opened in 1992; Koiso Ryohei’s studio was relocated and reconstructed in its courtyard.",
+          "address": "神戸市東灘区向洋町中5-7",
+          "latitude": "34.6928224",
+          "longitude": "135.2672258",
+          "coordinateSource": "https://www.openstreetmap.org/node/12541374174",
+          "use": "美術館",
+          "status": "現存・運営中",
+          "source": "https://www.city.kobe.lg.jp/a45010/kanko/bunka/bunkashisetsu/koisogallery/information/index.html",
+          "note": "1992年開館。中庭には画家小磯良平のアトリエが移築・復元されている。",
+          "official": "https://www.city.kobe.lg.jp/a45010/kanko/bunka/bunkashisetsu/koisogallery/information/index.html",
+          "maps": "https://www.google.com/maps/search/?api=1&query=%E7%A5%9E%E6%88%B8%E5%B8%82%E7%AB%8B%E5%B0%8F%E7%A3%AF%E8%A8%98%E5%BF%B5%E7%BE%8E%E8%A1%93%E9%A4%A8%20%E5%85%B5%E5%BA%AB%E7%9C%8C%20%E7%A5%9E%E6%88%B8%E5%B8%82%E6%9D%B1%E7%81%98%E5%8C%BA",
+          "kind": "",
+          "officialSearch": "",
+          "mapQueryName": "",
+          "relatedLinks": []
+        },
+        {
+          "prefecture": "大阪府",
+          "city": "大阪市住之江区",
+          "name": "ATC（アジア太平洋トレードセンター）",
+          "type": "商業・業務・展示施設",
+          "artificialIsland": "咲洲",
+          "name_en": "Asia and Pacific Trade Center (ATC)",
+          "type_en": "Retail, offices and exhibition",
+          "note_en": "A Sakishima complex combining retail, offices, halls and public exhibition spaces, connected to the station.",
+          "address": "大阪市住之江区南港北2-1-10",
+          "use": "商業・業務・展示施設",
+          "status": "現存・運営中",
+          "source": "https://www.atc-co.com/about/",
+          "note": "咲洲の商業、オフィス、ホール、公共展示場を含む複合施設。駅と館内動線が接続する。",
+          "official": "https://www.atc-co.com/about/",
+          "maps": "https://www.google.com/maps/search/?api=1&query=ATC%EF%BC%88%E3%82%A2%E3%82%B8%E3%82%A2%E5%A4%AA%E5%B9%B3%E6%B4%8B%E3%83%88%E3%83%AC%E3%83%BC%E3%83%89%E3%82%BB%E3%83%B3%E3%82%BF%E3%83%BC%EF%BC%89%20%E5%A4%A7%E9%98%AA%E5%BA%9C%20%E5%A4%A7%E9%98%AA%E5%B8%82%E4%BD%8F%E4%B9%8B%E6%B1%9F%E5%8C%BA",
+          "kind": "",
+          "officialSearch": "",
+          "mapQueryName": "",
+          "relatedLinks": []
+        },
+        {
+          "prefecture": "大阪府",
+          "city": "大阪市住之江区",
+          "name": "インテックス大阪",
+          "type": "展示施設",
+          "artificialIsland": "咲洲",
+          "name_en": "INTEX Osaka",
+          "type_en": "Exhibition venue",
+          "note_en": "An exhibition venue opened in 1985. A major renovation of Hall 3 has been announced.",
+          "address": "大阪市住之江区南港北1-5-102",
+          "latitude": "34.6372590",
+          "longitude": "135.4200149",
+          "coordinateSource": "https://www.openstreetmap.org/way/493551116",
+          "use": "展示施設",
+          "status": "現存・運営中",
+          "source": "https://www.city.osaka.lg.jp/keizaisenryaku/page/0000563687.html",
+          "note": "1985年開業の国際見本市会場。3号館は老朽化対策の大規模改修が予定されている。",
+          "official": "https://www.city.osaka.lg.jp/keizaisenryaku/page/0000563687.html",
+          "maps": "https://www.google.com/maps/search/?api=1&query=%E3%82%A4%E3%83%B3%E3%83%86%E3%83%83%E3%82%AF%E3%82%B9%E5%A4%A7%E9%98%AA%20%E5%A4%A7%E9%98%AA%E5%BA%9C%20%E5%A4%A7%E9%98%AA%E5%B8%82%E4%BD%8F%E4%B9%8B%E6%B1%9F%E5%8C%BA",
+          "kind": "",
+          "officialSearch": "",
+          "mapQueryName": "",
+          "relatedLinks": []
+        },
+        {
+          "prefecture": "大阪府",
+          "city": "大阪市此花区",
+          "name": "大阪広域環境施設組合 舞洲工場",
+          "type": "ごみ処理施設",
+          "artificialIsland": "舞洲",
+          "name_en": "Maishima Waste Treatment Plant",
+          "type_en": "Waste treatment plant",
+          "note_en": "A waste incineration plant with an exterior designed by Hundertwasser; guided visits are offered by reservation.",
+          "address": "大阪市此花区北港白津1-2-48",
+          "use": "ごみ処理施設",
+          "status": "現存・運営中",
+          "source": "https://www.osaka-env-paa.jp/kojo/maishima/",
+          "note": "フンデルトヴァッサーが外観をデザインした焼却工場。予約制の見学を実施する。",
+          "official": "https://www.osaka-env-paa.jp/kojo/maishima/",
+          "maps": "https://www.google.com/maps/search/?api=1&query=%E5%A4%A7%E9%98%AA%E5%BA%83%E5%9F%9F%E7%92%B0%E5%A2%83%E6%96%BD%E8%A8%AD%E7%B5%84%E5%90%88%20%E8%88%9E%E6%B4%B2%E5%B7%A5%E5%A0%B4%20%E5%A4%A7%E9%98%AA%E5%BA%9C%20%E5%A4%A7%E9%98%AA%E5%B8%82%E6%AD%A4%E8%8A%B1%E5%8C%BA",
+          "kind": "",
+          "officialSearch": "",
+          "mapQueryName": "",
+          "relatedLinks": []
+        },
+        {
+          "prefecture": "大阪府",
+          "city": "大阪市此花区",
+          "name": "舞洲スラッジセンター",
+          "type": "下水汚泥処理施設",
+          "artificialIsland": "舞洲",
+          "name_en": "Maishima Sludge Center",
+          "type_en": "Sludge treatment plant",
+          "note_en": "A sewage sludge treatment plant on Maishima; Osaka City offers facility tours.",
+          "address": "大阪市此花区北港白津2-2-7",
+          "use": "下水汚泥処理施設",
+          "status": "現存・運営中",
+          "source": "https://www.city.osaka.lg.jp/kensetsu/page/0000010364.html",
+          "note": "舞洲の下水汚泥処理施設。大阪市が施設見学を案内している。",
+          "official": "https://www.city.osaka.lg.jp/kensetsu/page/0000010364.html",
+          "maps": "https://www.google.com/maps/search/?api=1&query=%E8%88%9E%E6%B4%B2%E3%82%B9%E3%83%A9%E3%83%83%E3%82%B8%E3%82%BB%E3%83%B3%E3%82%BF%E3%83%BC%20%E5%A4%A7%E9%98%AA%E5%BA%9C%20%E5%A4%A7%E9%98%AA%E5%B8%82%E6%AD%A4%E8%8A%B1%E5%8C%BA",
+          "kind": "",
+          "officialSearch": "",
+          "mapQueryName": "",
+          "relatedLinks": []
+        },
+        {
+          "prefecture": "福岡県",
+          "city": "福岡市東区",
+          "name": "福岡市総合体育館",
+          "type": "体育館",
+          "artificialIsland": "アイランドシティ",
+          "name_en": "Fukuoka City General Gymnasium",
+          "type_en": "Sports arena",
+          "note_en": "A municipal sports arena opened on Island City in 2018.",
+          "address": "福岡市東区香椎照葉6-1-1",
+          "use": "体育館",
+          "status": "現存・運営中",
+          "source": "https://www.city.fukuoka.lg.jp/kowan/jigyokanri/islandcity/top.html",
+          "note": "アイランドシティに2018年開館した市立総合体育館。",
+          "official": "https://www.city.fukuoka.lg.jp/kowan/jigyokanri/islandcity/top.html",
+          "maps": "https://www.google.com/maps/search/?api=1&query=%E7%A6%8F%E5%B2%A1%E5%B8%82%E7%B7%8F%E5%90%88%E4%BD%93%E8%82%B2%E9%A4%A8%20%E7%A6%8F%E5%B2%A1%E7%9C%8C%20%E7%A6%8F%E5%B2%A1%E5%B8%82%E6%9D%B1%E5%8C%BA",
+          "kind": "",
+          "officialSearch": "",
+          "mapQueryName": "",
+          "relatedLinks": []
+        },
+        {
+          "prefecture": "和歌山県",
+          "city": "和歌山市",
+          "name": "ポルトヨーロッパ",
+          "type": "テーマパーク",
+          "artificialIsland": "和歌山マリーナシティ",
+          "name_en": "Porto Europa",
+          "type_en": "Theme park",
+          "note_en": "A theme park with European-style streets in Wakayama Marina City.",
+          "address": "和歌山市毛見1527",
+          "latitude": "34.1533163",
+          "longitude": "135.1775167",
+          "coordinateSource": "https://www.openstreetmap.org/way/295050989",
+          "use": "テーマパーク",
+          "status": "現存・運営中",
+          "source": "https://www.marinacity.com/porto/",
+          "note": "和歌山マリーナシティ内のヨーロッパ風街並みを持つテーマパーク。",
+          "official": "https://www.marinacity.com/porto/",
+          "maps": "https://www.google.com/maps/search/?api=1&query=%E3%83%9D%E3%83%AB%E3%83%88%E3%83%A8%E3%83%BC%E3%83%AD%E3%83%83%E3%83%91%20%E5%92%8C%E6%AD%8C%E5%B1%B1%E7%9C%8C%20%E5%92%8C%E6%AD%8C%E5%B1%B1%E5%B8%82",
+          "kind": "",
+          "officialSearch": "",
+          "mapQueryName": "",
+          "relatedLinks": []
+        },
+        {
+          "prefecture": "和歌山県",
+          "city": "和歌山市",
+          "name": "黒潮市場",
+          "type": "市場・商業施設",
+          "artificialIsland": "和歌山マリーナシティ",
+          "name_en": "Kuroshio Market",
+          "type_en": "Market and retail",
+          "note_en": "A seafood market within Wakayama Marina City.",
+          "address": "和歌山市毛見1527",
+          "use": "市場・商業施設",
+          "status": "現存・運営中",
+          "source": "https://www.marinacity.com/porto/shoparea/kuroshio/",
+          "note": "和歌山マリーナシティ内の海産物市場。",
+          "official": "https://www.marinacity.com/porto/shoparea/kuroshio/",
+          "maps": "https://www.google.com/maps/search/?api=1&query=%E9%BB%92%E6%BD%AE%E5%B8%82%E5%A0%B4%20%E5%92%8C%E6%AD%8C%E5%B1%B1%E7%9C%8C%20%E5%92%8C%E6%AD%8C%E5%B1%B1%E5%B8%82",
+          "kind": "",
+          "officialSearch": "",
+          "mapQueryName": "",
+          "relatedLinks": []
+        },
+        {
+          "prefecture": "愛知県",
+          "city": "常滑市",
+          "name": "フライト・オブ・ドリームズ",
+          "type": "航空展示・商業施設",
+          "artificialIsland": "中部国際空港島",
+          "name_en": "Flight of Dreams",
+          "type_en": "Aviation exhibit and retail",
+          "note_en": "An aviation exhibit and dining complex on the Chubu airport island, reached by moving walkway from the station.",
+          "address": "常滑市セントレア1-1",
+          "use": "航空展示・商業施設",
+          "status": "現存・運営中",
+          "source": "https://www.centrair.jp/flight-of-dreams/access.html",
+          "note": "中部国際空港島の航空展示・飲食複合施設。空港駅から動く歩道でつながる。",
+          "official": "https://www.centrair.jp/flight-of-dreams/access.html",
+          "maps": "https://www.google.com/maps/search/?api=1&query=%E3%83%95%E3%83%A9%E3%82%A4%E3%83%88%E3%83%BB%E3%82%AA%E3%83%96%E3%83%BB%E3%83%89%E3%83%AA%E3%83%BC%E3%83%A0%E3%82%BA%20%E6%84%9B%E7%9F%A5%E7%9C%8C%20%E5%B8%B8%E6%BB%91%E5%B8%82",
+          "kind": "",
+          "officialSearch": "",
+          "mapQueryName": "",
+          "relatedLinks": []
+        },
+        {
+          "prefecture": "大阪府",
+          "city": "泉佐野市",
+          "name": "関西国際空港 第1ターミナルビル",
+          "type": "空港ターミナル",
+          "artificialIsland": "関西国際空港島",
+          "name_en": "Kansai International Airport Terminal 1",
+          "type_en": "Airport terminal",
+          "note_en": "The original terminal of the 1994 airport; major functions reopened after renovation in 2025.",
+          "address": "泉佐野市泉州空港北1",
+          "use": "空港ターミナル",
+          "status": "現存・運営中",
+          "source": "https://www.pref.osaka.lg.jp/o020060/kutai/kuusen/kankuu_gaiyou.html",
+          "note": "1994年開港時からの空港ターミナル。2025年に大規模改修後の主要機能が完成した。",
+          "official": "https://www.pref.osaka.lg.jp/o020060/kutai/kuusen/kankuu_gaiyou.html",
+          "maps": "https://www.google.com/maps/search/?api=1&query=%E9%96%A2%E8%A5%BF%E5%9B%BD%E9%9A%9B%E7%A9%BA%E6%B8%AF%20%E7%AC%AC1%E3%82%BF%E3%83%BC%E3%83%9F%E3%83%8A%E3%83%AB%E3%83%93%E3%83%AB%20%E5%A4%A7%E9%98%AA%E5%BA%9C%20%E6%B3%89%E4%BD%90%E9%87%8E%E5%B8%82",
+          "kind": "",
+          "officialSearch": "",
+          "mapQueryName": "",
+          "relatedLinks": []
+        },
+        {
+          "prefecture": "大阪府",
+          "city": "大阪市此花区",
+          "name": "夢洲駅",
+          "type": "鉄道駅",
+          "artificialIsland": "夢洲",
+          "name_en": "Yumeshima Station",
+          "type_en": "Railway station",
+          "note_en": "Opened in January 2025, this Osaka Metro station was built as the rail gateway to Yumeshima.",
+          "address": "大阪市此花区夢洲",
+          "use": "交通施設",
+          "status": "現存・運営中",
+          "source": "https://subway.osakametro.co.jp/news/news/subway/20250119_yumeshima_start.php",
+          "note": "2025年1月開業。夢洲への鉄道玄関口として整備され、折り紙をモチーフにした天井を持つ。",
+          "official": "https://subway.osakametro.co.jp/news/news/subway/20250119_yumeshima_start.php",
+          "maps": "https://www.google.com/maps/search/?api=1&query=%E5%A4%A2%E6%B4%B2%E9%A7%85%20%E5%A4%A7%E9%98%AA%E5%BA%9C%20%E5%A4%A7%E9%98%AA%E5%B8%82%E6%AD%A4%E8%8A%B1%E5%8C%BA",
+          "kind": "",
+          "officialSearch": "",
+          "mapQueryName": "",
+          "relatedLinks": []
+        },
+        {
+          "prefecture": "兵庫県",
+          "city": "神戸市中央区",
+          "name": "神戸空港 第1ターミナルビル",
+          "type": "空港ターミナル",
+          "artificialIsland": "神戸空港島",
+          "name_en": "Kobe Airport Terminal 1",
+          "type_en": "Airport terminal",
+          "note_en": "The domestic terminal used since Kobe Airport opened in 2006.",
+          "address": "神戸市中央区神戸空港",
+          "use": "空港ターミナル",
+          "status": "現存・運営中",
+          "source": "https://www.kairport.co.jp/service/information/info-center",
+          "note": "2006年の神戸空港開港時から利用される国内線ターミナル。",
+          "official": "https://www.kairport.co.jp/service/information/info-center",
+          "maps": "https://www.google.com/maps/search/?api=1&query=%E7%A5%9E%E6%88%B8%E7%A9%BA%E6%B8%AF%20%E7%AC%AC1%E3%82%BF%E3%83%BC%E3%83%9F%E3%83%8A%E3%83%AB%E3%83%93%E3%83%AB%20%E5%85%B5%E5%BA%AB%E7%9C%8C%20%E7%A5%9E%E6%88%B8%E5%B8%82%E4%B8%AD%E5%A4%AE%E5%8C%BA",
+          "kind": "",
+          "officialSearch": "",
+          "mapQueryName": "",
+          "relatedLinks": []
+        },
+        {
+          "prefecture": "兵庫県",
+          "city": "神戸市中央区",
+          "name": "神戸空港 第2ターミナルビル",
+          "type": "空港ターミナル",
+          "artificialIsland": "神戸空港島",
+          "name_en": "Kobe Airport Terminal 2",
+          "type_en": "Airport terminal",
+          "note_en": "The international terminal opened in April 2025, marking an expansion of uses on the airport island.",
+          "address": "神戸市中央区神戸空港",
+          "use": "空港ターミナル",
+          "status": "現存・運営中",
+          "source": "https://www.city.kobe.lg.jp/a11380/20241010.html",
+          "note": "2025年4月開業の国際線ターミナル。空港島の用途拡張を示す施設。",
+          "official": "https://www.city.kobe.lg.jp/a11380/20241010.html",
+          "maps": "https://www.google.com/maps/search/?api=1&query=%E7%A5%9E%E6%88%B8%E7%A9%BA%E6%B8%AF%20%E7%AC%AC2%E3%82%BF%E3%83%BC%E3%83%9F%E3%83%8A%E3%83%AB%E3%83%93%E3%83%AB%20%E5%85%B5%E5%BA%AB%E7%9C%8C%20%E7%A5%9E%E6%88%B8%E5%B8%82%E4%B8%AD%E5%A4%AE%E5%8C%BA",
+          "kind": "",
+          "officialSearch": "",
+          "mapQueryName": "",
+          "relatedLinks": []
+        },
+        {
+          "prefecture": "愛知県",
+          "city": "常滑市",
+          "name": "Aichi Sky Expo（愛知県国際展示場）",
+          "type": "展示施設",
+          "artificialIsland": "中部国際空港島",
+          "name_en": "Aichi Sky Expo",
+          "type_en": "Exhibition venue",
+          "note_en": "Opened in 2019 on the Chubu airport island, directly linked to the airport.",
+          "address": "愛知県常滑市セントレア5-10-1",
+          "use": "展示施設",
+          "status": "現存・運営中",
+          "source": "https://www.pref.aichi.jp/soshiki/kokusai-kanko/tenji.html",
+          "note": "2019年開業。中部国際空港島にある空港直結型の国際展示場。",
+          "official": "https://www.pref.aichi.jp/soshiki/kokusai-kanko/tenji.html",
+          "maps": "https://www.google.com/maps/search/?api=1&query=Aichi%20Sky%20Expo%EF%BC%88%E6%84%9B%E7%9F%A5%E7%9C%8C%E5%9B%BD%E9%9A%9B%E5%B1%95%E7%A4%BA%E5%A0%B4%EF%BC%89%20%E6%84%9B%E7%9F%A5%E7%9C%8C%20%E5%B8%B8%E6%BB%91%E5%B8%82",
+          "kind": "",
+          "officialSearch": "",
+          "mapQueryName": "",
+          "relatedLinks": []
         }
       ]
     }
