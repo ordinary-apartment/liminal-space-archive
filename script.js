@@ -9,7 +9,7 @@ const ui=k=>uiText[IS_EN?'en':'ja'][k]||k;
 const displayName=x=>IS_EN?(x?.name_en||window.EN_TRANSLATIONS?.facilities?.[x?.name]||x?.name||''):(x?.name||'');
 const displayNote=x=>IS_EN?(x?.note_en||x?.note||''):(x?.note||'');
 const displayType=x=>{
-  const primary=x?.type_en||window.EN_TRANSLATIONS?.types?.[x?.type]||x?.type||'';
+  const primary=IS_EN?(x?.type_en||window.EN_TRANSLATIONS?.types?.[x?.type]||x?.type||''):(x?.type||'');
   return x?.artificialIsland?`${primary} · ${IS_EN?'Artificial Islands':'人工島'}`:primary;
 };
 const islandNamesEn={'ポートアイランド':'Port Island','六甲アイランド':'Rokko Island','咲洲':'Sakishima','舞洲':'Maishima','夢洲':'Yumeshima','有明':'Ariake','青海':'Aomi','台場':'Daiba','夢の島':'Yumenoshima','北九州空港島':'Kitakyushu Airport Island','アイランドシティ':'Island City','和歌山マリーナシティ':'Wakayama Marina City','中部国際空港島':'Chubu Airport Island','関西国際空港島':'Kansai Airport Island'};
