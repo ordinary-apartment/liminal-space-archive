@@ -153,14 +153,13 @@ function facilitiesPage(selectedKey=null,selectedIndex=null){
   active('facilities');
   if(!document.querySelector('.facilities-ledger')){
     unfilteredList=null;
-    main.innerHTML=`<div class="facilities-ledger"><div class="facilities-ledger-fixed"><div class="facility-search" role="search"><label for="facility-query">${ui('search')}</label><input id="facility-query" type="search" placeholder="${ui('placeholder')}" autocomplete="off" aria-describedby="facility-search-status" value="${h(facilityQuery)}"><button id="island-filter" type="button">${IS_EN?'Artificial Islands':'人工島'}</button><button id="clear-facility-search" type="button">${ui('clear')}</button><output id="facility-search-status" aria-live="polite"></output></div></div><div class="ledger-viewport"><div class="facilities-ledger-scroll" tabindex="0" role="region" aria-label="${ui('places')}"></div><aside id="facility-detail-panel" aria-label="${ui('detail')}" hidden></aside></div></div>`;
+    main.innerHTML=`<div class="facilities-ledger"><div class="facilities-ledger-fixed"><div class="facility-search" role="search"><label for="facility-query">${ui('search')}</label><input id="facility-query" type="search" placeholder="${ui('placeholder')}" autocomplete="off" aria-describedby="facility-search-status" value="${h(facilityQuery)}"><button id="clear-facility-search" type="button">${ui('clear')}</button><output id="facility-search-status" aria-live="polite"></output></div></div><div class="ledger-viewport"><div class="facilities-ledger-scroll" tabindex="0" role="region" aria-label="${ui('places')}"></div><aside id="facility-detail-panel" aria-label="${ui('detail')}" hidden></aside></div></div>`;
     renderLedgerResults();wire();
     const input=document.querySelector('#facility-query'),scroller=document.querySelector('.facilities-ledger-scroll');
     input.addEventListener('input',event=>{if(!event.isComposing){facilityQuery=input.value;renderLedgerResults();}});
     input.addEventListener('compositionend',()=>{facilityQuery=input.value;renderLedgerResults();});
     const clear=()=>{input.value='';facilityQuery='';renderLedgerResults();};
     document.querySelector('#clear-facility-search').onclick=()=>{clear();input.focus();};
-    document.querySelector('#island-filter').onclick=()=>{input.value=IS_EN?'Artificial Islands':'人工島';facilityQuery=input.value;renderLedgerResults();input.focus();};
     input.addEventListener('keydown',event=>{if(event.key==='Escape'){clear();event.preventDefault();}});
     // The panel overlays the list: closing it never changes the list geometry.
     scroller.addEventListener('wheel',event=>{if(event.deltaY)hideFacilityDetail();},{passive:true});
