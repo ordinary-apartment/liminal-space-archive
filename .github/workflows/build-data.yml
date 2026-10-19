@@ -41,6 +41,7 @@ jobs:
           if [ -d en ]; then cp -R en _site/; fi
           cp generated/facility-data.js generated/facility-data.json _site/generated/
           if [ -f CNAME ]; then cp CNAME _site/; fi
+          cp robots.txt sitemap.xml googlec83a3b5767c82b75.html _site/
           if [ -d images ]; then cp -R images _site/; fi
           touch _site/.nojekyll
       - uses: actions/upload-pages-artifact@v3
