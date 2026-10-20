@@ -54,7 +54,26 @@ const botanicalDetailPages={
   '新宿御苑 大温室':'shinjuku-greenhouse.html',
   '小石川植物園 公開温室':'koishikawa-greenhouse.html',
   '東京都薬用植物園 温室':'tokyo-medicinal-garden.html',
-  '渋谷区ふれあい植物センター':'shibuya-fureai.html'
+  '渋谷区ふれあい植物センター':'shibuya-fureai.html',
+  '水元公園 水辺の生きもの館':'mizumoto-ikimono.html',
+  '目黒寄生虫館':'meguro-parasitological.html',
+  '東京海洋大学マリンサイエンスミュージアム':'marine-science-museum.html',
+  '科学技術館':'science-museum.html',
+  '東京都立第五福竜丸展示館':'daigo-fukuryu-maru.html',
+  '国立極地研究所 南極・北極科学館':'polar-science-museum.html',
+  '国立科学博物館':'national-museum-nature-science.html',
+  '日本科学未来館':'miraikan.html',
+  '港区立みなと科学館':'minato-science.html',
+  '板橋区立教育科学館':'itabashi-education-science.html',
+  '多摩六都科学館':'tama-rokuto.html',
+  'コニカミノルタ サイエンスドーム（八王子市こども科学館）':'hachioji-science-dome.html',
+  'TEPIA先端技術館':'tepia.html',
+  '東京科学大学博物館':'science-tokyo-museum.html',
+  '東京理科大学 近代科学資料館':'tus-science-museum.html',
+  '東京理科大学 数学体験館':'tus-math.html',
+  '東京大学総合研究博物館':'utokyo-museum.html',
+  '東京大学駒場博物館':'komaba-museum.html',
+  'インターメディアテク':'intermediatheque.html'
 };
 function botanicalDetailLink(item){
   const page=botanicalDetailPages[item.name];
