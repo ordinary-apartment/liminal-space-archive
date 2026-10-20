@@ -47,7 +47,20 @@ const wikipediaLinksMarkup=(extra,links=[])=>{
   return urls.length?`<span class="reference-links">${urls.map(url=>`<a href="${h(url)}" target="_blank" rel="noopener noreferrer" title="wiki" aria-label="wiki">wiki</a>`).join('')}</span>`:'';
 };
 const referenceMarkup=(extra,links=[])=>wikipediaLinksMarkup(extra,links)||'';
-function catalogSection(number,id,title,note,items){const rows=items.map(x=>`<tr data-prefecture="${h(x.prefecture)}" data-type="${h(displayType(x))}"><td>${x.official?`<a href="${h(x.official)}" target="_blank" rel="noopener noreferrer">${ui('official')}</a> `:''}<a href="${h(x.maps)}" target="_blank" rel="noopener noreferrer">${ui('map')}</a> ${referenceMarkup(x.extra,x.relatedLinks)}</td><td>${h(x.prefecture)}</td><td>${h(x.city)}</td><td>${x.name==='玄海海中展望塔'?`<button class="facility-detail-link" data-facility-detail="genkai-undersea">${h(displayName(x))}</button>`:x.name==='夢の島熱帯植物館'?`<a class="facility-detail-link" href="${IS_EN?'../':''}facilities/yumenoshima.html?v=covers-20261020b">${h(displayName(x))}</a>`:h(displayName(x))}</td><td>${h(displayType(x))}</td><td>${relatedLinksMarkup(x.relatedLinks,true)}</td><td>${h(displayNote(x))}</td></tr>`).join('');return `<section class="reference-section" id="${id}"><div class="reference-heading"><span>${IS_EN?'Collection':'資料'}${number}</span><h2>${h(title)}</h2><span>${String(items.length).padStart(3,'0')}${ui('count')}</span></div><p class="reference-note">${h(note)}　${IS_EN?'Sort by prefecture or category.':'都道府県・分類の見出しで昇順／降順。'}</p><div class="record-table catalog-table"><table>${sortableHead}<tbody>${rows}</tbody></table></div></section>`}
+const botanicalDetailPages={
+  '夢の島熱帯植物館':'yumenoshima.html?v=covers-20261020b',
+  '板橋区立熱帯環境植物館':'itabashi-nettaikan.html',
+  '神代植物公園 大温室':'jindai-greenhouse.html',
+  '新宿御苑 大温室':'shinjuku-greenhouse.html',
+  '小石川植物園 公開温室':'koishikawa-greenhouse.html',
+  '東京都薬用植物園 温室':'tokyo-medicinal-garden.html',
+  '渋谷区ふれあい植物センター':'shibuya-fureai.html'
+};
+function botanicalDetailLink(item){
+  const page=botanicalDetailPages[item.name];
+  return page?`<a class="facility-detail-link" href="${IS_EN?'../':''}facilities/${page}">${h(displayName(item))}</a>`:null;
+}
+function catalogSection(number,id,title,note,items){const rows=items.map(x=>`<tr data-prefecture="${h(x.prefecture)}" data-type="${h(displayType(x))}"><td>${x.official?`<a href="${h(x.official)}" target="_blank" rel="noopener noreferrer">${ui('official')}</a> `:''}<a href="${h(x.maps)}" target="_blank" rel="noopener noreferrer">${ui('map')}</a> ${referenceMarkup(x.extra,x.relatedLinks)}</td><td>${h(x.prefecture)}</td><td>${h(x.city)}</td><td>${x.name==='玄海海中展望塔'?`<button class="facility-detail-link" data-facility-detail="genkai-undersea">${h(displayName(x))}</button>`:botanicalDetailLink(x)||h(displayName(x))}</td><td>${h(displayType(x))}</td><td>${relatedLinksMarkup(x.relatedLinks,true)}</td><td>${h(displayNote(x))}</td></tr>`).join('');return `<section class="reference-section" id="${id}"><div class="reference-heading"><span>${IS_EN?'Collection':'資料'}${number}</span><h2>${h(title)}</h2><span>${String(items.length).padStart(3,'0')}${ui('count')}</span></div><p class="reference-note">${h(note)}　${IS_EN?'Sort by prefecture or category.':'都道府県・分類の見出しで昇順／降順。'}</p><div class="record-table catalog-table"><table>${sortableHead}<tbody>${rows}</tbody></table></div></section>`}
 function wireSortTables(){
   document.querySelectorAll('.record-table table').forEach(table=>{
     table.querySelectorAll('[data-sort]').forEach(button=>{
@@ -72,7 +85,7 @@ function detailMarkup(selected,definition){
 }
 function ledgerRow(entry){
   const x=entry.item,id=`${entry.key}/${entry.index}`;
-  return `<tr class="${id===selectedFacilityId?'selected-row':''}" data-prefecture="${h(x.prefecture)}" data-type="${h(displayType(x))}"><td>${x.official?`<a href="${h(x.official)}" target="_blank" rel="noopener noreferrer">${ui('official')}</a> `:''}<a href="${h(x.maps)}" target="_blank" rel="noopener noreferrer">${ui('map')}</a> ${referenceMarkup(x.extra,x.relatedLinks)}</td><td>${h(x.prefecture)}</td><td>${h(x.city)}</td><td>${x.name==='夢の島熱帯植物館'?`<a class="facility-detail-link" href="${IS_EN?'../':''}facilities/yumenoshima.html?v=covers-20261020b">${h(displayName(x))}</a>`:`<a class="facility-detail-link" href="#facility/${h(id)}" data-all-facility="${h(id)}" aria-controls="facility-detail-panel" aria-expanded="false">${h(displayName(x))}</a>`}</td><td>${h(displayType(x))}</td><td>${relatedLinksMarkup(x.relatedLinks,true)}</td><td>${h(displayNote(x))}</td></tr>`;
+  return `<tr class="${id===selectedFacilityId?'selected-row':''}" data-prefecture="${h(x.prefecture)}" data-type="${h(displayType(x))}"><td>${x.official?`<a href="${h(x.official)}" target="_blank" rel="noopener noreferrer">${ui('official')}</a> `:''}<a href="${h(x.maps)}" target="_blank" rel="noopener noreferrer">${ui('map')}</a> ${referenceMarkup(x.extra,x.relatedLinks)}</td><td>${h(x.prefecture)}</td><td>${h(x.city)}</td><td>${botanicalDetailLink(x)||`<a class="facility-detail-link" href="#facility/${h(id)}" data-all-facility="${h(id)}" aria-controls="facility-detail-panel" aria-expanded="false">${h(displayName(x))}</a>`}</td><td>${h(displayType(x))}</td><td>${relatedLinksMarkup(x.relatedLinks,true)}</td><td>${h(displayNote(x))}</td></tr>`;
 }
 function ledgerSection(id,number,title,entries,expanded=false){
   return `<details class="all-material-section" id="${h(id)}"${expanded?' open':''}><summary class="reference-heading"><span>${h(number)}</span><h2>${h(title)}</h2><span>${String(entries.length).padStart(3,'0')}${ui('count')}</span></summary><div class="record-table catalog-table"><table aria-label="${h(title)}">${sortableHead}<tbody>${entries.map(ledgerRow).join('')}</tbody></table></div></details>`;
